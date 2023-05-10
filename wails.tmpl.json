@@ -1,11 +1,11 @@
 {
+  "$schema": "https://wails.io/schemas/config.v2.json",
   "name": "{{.ProjectName}}",
-  "assetdir": "frontend/dist",
+  "outputfilename": "{{.BinaryName}}",
   "frontend:build": "npm run build",
   "frontend:install": "npm install",
-  "frontend:dev": "npm run watch",
-  "wailsjsdir": "./frontend",
-  "outputfilename": "{{.BinaryName}}",
+  "frontend:dev:watcher": "npm run start",
+  "frontend:dev:serverUrl": "http://localhost:4200/",
   "Author": {
     "name": "{{.AuthorName}}",
     "email": "{{.AuthorEmail}}"
